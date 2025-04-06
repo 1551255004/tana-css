@@ -1,0 +1,7 @@
+/* RC: HIDE RELATED CONTENT IF IT'S A SEARCH NODE THAT RETURNS NO RESULTS per @blank */
+div[class*="WidgetPanel-module_container"]:has(
+div[class*="Message-module_subtle"][class*="Message-module_smaller"]
+) {
+display: none !important;
+}
+
