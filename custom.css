@@ -4,24 +4,3 @@ div[class*="Message-module_subtle"][class*="Message-module_smaller"]
 ) {
 display: none !important;
 }
-/* REMOVE THE GAP AT THE TOP OF THE APP THAT'S DESIGNED FOR THE TITLE BAR */
-[class*="ElectronTitleBar-module_titlebar"] {
-  display: none !important;
-}
-/* REPOSITION THE APP TO TAKE UP ALL THE SPACE */
-[data-role="layout-and-docks"] {
-  height: calc(
-    100vh - var(--dockAreaDividerSize) - var(--panelsLayoutInset) * 2 -
-      var(--globalMessageHeight)
-  ) !important;
-}
-/* MAKE THE TOP NAV BAR DRAGGABLE (via @READY) */
-[data-panel-toolbar="true"] {
-  -webkit-app-region: drag !important;
-}
-/* MAKE SPECIFIC ELEMENTS IN THE DRAGGABLE AREA NON-DRAGGABLE (via @READY) */
-[data-panel-toolbar="true"] button,
-[data-panel-toolbar="true"] input,
-[data-panel-toolbar="true"] [role="button"] {
-  -webkit-app-region: no-drag !important;
-}
