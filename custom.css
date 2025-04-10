@@ -4,3 +4,20 @@ div[class*="Message-module_subtle"][class*="Message-module_smaller"]
 ) {
 display: none !important;
 }
+
+html:not(.mobile) .NodeAsListElement-module_el__Ej7SZ.NodeAsListElement-module_isTuple__MMJU5>.NodeAsListElement-module_wrapper__a1g94>.NodeAsListElement-module_main__wdQrJ {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+.isDarkMode div#floatingTourTemplateChildrenContainer {
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #3b3b3b;
+}
+
+div#floatingTourTemplateChildrenContainer {
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d8d6dd;
+}
